@@ -88,10 +88,17 @@ right.addEventListener("click", ()=>{
     rotation()
 });
 
-let rotation()=>{
+function rotation(){
+
+    if (tracker === reviews.length){
+        tracker = 0;
+    }
+    if (tracker < 0){
+        tracker = reviews.length -1;
+    }
 
     reviews.forEach((review)=>{
-        review.style.transform=`translateX(-${100*tracker}%`;
-    }
-    });
+        review.style.transform =`translateX(-${tracker*100}%)`;
+    })
+    };
     
