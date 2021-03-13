@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header .logo {
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+header .logo img {
+  margin-left: 40%;
+  margin-top: 15%;
+}
+
+header video {
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-section {
+  margin-top: -5px;
+  position: relative;
+}
+
+.about-section .about {
+  height: 50vh;
+}
+
+.about-section .about.one {
+  background-color: #f8f1f1;
+  font-family: "Parisienne", cursive;
+  padding-top: 60px;
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
+  color: #1f1d1d;
+}
+
+.about-section .about.two {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f1f1), color-stop(#c6ca7c), to(#1f1f1d));
+  background-image: linear-gradient(to bottom, #f8f1f1, #c6ca7c, #1f1f1d);
+}
+
+.about-section .about.two p {
+  text-align: center;
+  padding-top: 300px;
+  color: white;
+  font-family: "Ibarra Real Nova", serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.about-section .about-image Img {
+  position: absolute;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 13%;
+}
+
+.photo-section {
+  position: relative;
+}
+
+.photo-section .photo-container {
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  margin-left: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.photo-section .photo-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.photo-section .prev-btn {
+  margin-left: 30%;
+}
+
+.photo-section .next-btn {
+  margin-left: 85.5%;
+}
+
+.photo-section button {
+  position: absolute;
+  display: inline-block;
+  background-color: transparent;
+  margin-top: 15%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.photo-section button img {
+  width: 80px;
+}
+
+.photo-section button img:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.photo-section .photo.one {
+  background-color: #1f1f1d;
+  height: 25vh;
+}
+
+.photo-section .photo.one h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: #c6ca7c;
+  padding-top: 8%;
+  padding-left: 30px;
+}
+
+.photo-section .photo.two {
+  height: 50vh;
+  background-color: #f8f1f1;
+}
+
+.service-section .service-block {
+  height: 40vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6ca7c), to(#fffacb));
+  background-image: linear-gradient(to bottom, #c6ca7c, #fffacb);
+}
+
+.service-section .service-container {
+  height: 70vh;
+  margin-top: -15%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service-section .service-container .service-box {
+  width: 300px;
+}
+
+.service-section .service-container .service-box .service-title {
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.service-section .service-container .service-box .service-image img {
+  width: 300px;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -webkit-box-shadow: 3px 3px 5px 1px #534e4e;
+          box-shadow: 3px 3px 5px 1px #534e4e;
+  cursor: pointer;
+}
+
+.service-section .service-container .service-box .service-image .back:hover {
+  opacity: 0;
+}
+
+.service-section .service-container .service-booking {
+  text-align: center;
+  font-family: "Oregano", cursive;
+  text-transform: uppercase;
+  margin-top: 500px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #333d0f;
+  -webkit-text-decoration: underline 4px #c6ca7c;
+          text-decoration: underline 4px #c6ca7c;
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: -10;
+  background-color: #1f1d1d8e;
+}
+
+.modal-background .cross img {
+  right: 0 !important;
+  margin-left: 93%;
+  margin-top: 50px;
+  width: 70px;
+}
+
+.modal-background .cross img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-background .modal-container {
+  width: 60%;
+  height: 60%;
+  background-color: #ffffff;
+  border: #c6ca7c 8px solid;
+  margin: 5% auto;
+}
+
+.modal-background .modal-container .modal-title {
+  text-align: center;
+  margin-top: 30px;
+  color: #c6ca7c;
+  font-family: "Lobster Two", cursive;
+  font-size: 40px;
+}
+
+.show .modal-background {
+  display: block;
+  z-index: 10;
+}
+
+.what-background {
+  margin-top: 5%;
+  width: 100%;
+  padding: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffffe7));
+  background-image: linear-gradient(to bottom, white, #ffffe7);
+}
+
+.what-background .what-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.what-background .what-section .what-image {
+  width: 60%;
+}
+
+.what-background .what-section .what-image img {
+  width: 100%;
+}
+
+.what-background .what-section .button-container {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  margin-left: 80px;
+  background-color: #ffffff;
+  border: #c6ca7c 6px solid;
+  padding: 20px;
+}
+
+.what-background .what-section .button-container .tab-button {
+  height: 50px;
+  width: 150px;
+  margin-left: 45px;
+  font-family: "Oregano", cursive;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: #c6ca7c 3px solid;
+  outline: none;
+}
+
+.what-background .what-section .button-container .tab-button.active {
+  background-color: #c6ca7c;
+  border: #949238 3px solid;
+  color: white;
+}
+
+.what-background .what-section .button-container .what-content h3 {
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  font-size: 50px;
+  margin-top: 20px;
+  -webkit-text-decoration: underline 3px #c6ca7c;
+          text-decoration: underline 3px #c6ca7c;
+}
+
+.what-background .what-section .button-container .what-content p {
+  font-family: "Ibarra Real Nova", serif;
+  margin-top: 18px;
+}
+
+.what-background .what-section .button-container .what-content ul {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.what-background .what-section .button-container .what-content ul li {
+  margin-top: 12px;
+}
+
+.what-background .what-section .button-container .what-content .content {
+  display: none;
+}
+
+.what-background .what-section .button-container .what-content .content.active {
+  display: block;
+}
+
+.footer-container {
+  background-color: #1f1d1d;
+}
+
+.footer-container .footer-house {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer-house .footer-icon {
+  padding: 40px 200px;
+}
+
+.footer-container .footer-house .footer-icon img {
+  width: 250px;
+}
+
+.footer-container .footer-house .footer-room {
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+.footer-container .footer-house .footer-room .footer-title {
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+  color: #c6ca7c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-container .footer-house .footer-room .footer-list {
+  font-family: "Libre Caslon Display", serif;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-container .footer-house .footer-room .footer-list ul {
+  text-align: center;
+}
+
+.footer-container .footer-house .footer-room .footer-list ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-container .footer-house .footer-room .footer-list ul li a:link,
+.footer-container .footer-house .footer-room .footer-list ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container .footer-house .footer-room .footer-list ul li a:hover,
+.footer-container .footer-house .footer-room .footer-list ul li a:active {
+  -webkit-text-decoration: underline solid #ffffff 2px;
+          text-decoration: underline solid #ffffff 2px;
+}
+/*# sourceMappingURL=style.css.map */

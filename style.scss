@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primaryColor: rgb(31, 31, 29);
+$h1Color: #333d0f;
+$secondaryColor: rgb(198, 202, 124);
+
+header {
+  position: relative;
+  overflow: hidden;
+  .logo {
+    position: absolute;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    img {
+      margin-left: 40%;
+      margin-top: 15%;
+    }
+  }
+  video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
+.about-section {
+  margin-top: -5px;
+  position: relative;
+  .about {
+    height: 50vh;
+  }
+  .about.one {
+    background-color: rgb(248, 241, 241);
+    font-family: "Parisienne", cursive;
+    padding-top: 60px;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    color: #1f1d1d;
+  }
+  .about.two {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(248, 241, 241),
+      $secondaryColor,
+      $primaryColor
+    );
+
+    p {
+      text-align: center;
+      padding-top: 300px;
+      color: white;
+      font-family: "Ibarra Real Nova", serif;
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
+
+  .about-image {
+    Img {
+      position: absolute;
+      width: 40%;
+      margin-left: 30%;
+      margin-top: 13%;
+    }
+  }
+}
+
+.photo-section {
+  position: relative;
+  .photo-container {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    margin-left: 35%;
+    display: flex;
+    overflow: hidden;
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .prev-btn {
+    margin-left: 30%;
+  }
+
+  .next-btn {
+    margin-left: 85.5%;
+  }
+  button {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    margin-top: 15%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    img {
+      width: 80px;
+    }
+    img:hover {
+      transform: scale(1.4);
+      transition: 0.5s;
+    }
+  }
+  .photo.one {
+    background-color: $primaryColor;
+    height: 25vh;
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 50px;
+      color: $secondaryColor;
+      padding-top: 8%;
+      padding-left: 30px;
+    }
+  }
+  .photo.two {
+    height: 50vh;
+    background-color: rgb(248, 241, 241);
+  }
+}
+
+.service-section {
+  .service-block {
+    height: 40vh;
+    background-image: linear-gradient(to bottom, $secondaryColor, #fffacb);
+  }
+
+  .service-container {
+    height: 70vh;
+    margin-top: -15%;
+    justify-content: space-around;
+    display: flex;
+    .service-box {
+      width: 300px;
+      .service-title {
+        text-align: center;
+        font-family: "Lobster Two", cursive;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .service-image {
+        img {
+          width: 300px;
+          position: absolute;
+          transition: opacity 1s ease-in-out;
+          box-shadow: 3px 3px 5px 1px rgb(83, 78, 78);
+          cursor: pointer;
+        }
+        .back:hover {
+          opacity: 0;
+        }
+      }
+    }
+    .service-booking {
+      text-align: center;
+      font-family: "Oregano", cursive;
+      text-transform: uppercase;
+      margin-top: 500px;
+      font-size: 23px;
+      font-weight: bold;
+      color: $h1Color;
+      text-decoration: underline 4px $secondaryColor;
+    }
+  }
+}
+
+.modal-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: -10;
+  background-color: #1f1d1d8e;
+  .cross {
+    img {
+      right: 0 !important;
+      margin-left: 93%;
+      margin-top: 50px;
+      width: 70px;
+    }
+    img:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
+  .modal-container {
+    width: 60%;
+    height: 60%;
+    background-color: #ffffff;
+    border: $secondaryColor 8px solid;
+    margin: 5% auto;
+    .modal-title {
+      text-align: center;
+      margin-top: 30px;
+      color: $secondaryColor;
+      font-family: "Lobster Two", cursive;
+      font-size: 40px;
+    }
+  }
+}
+
+.show {
+  .modal-background {
+    display: block;
+    z-index: 10;
+  }
+}
+
+.what-background {
+  margin-top: 5%;
+  width: 100%;
+  padding: 50px;
+  background-image: linear-gradient(to bottom, white, #ffffe7);
+  .what-section {
+    width: 100%;
+    display: flex;
+    .what-image {
+      width: 60%;
+      img {
+        width: 100%;
+      }
+    }
+    .button-container {
+      display: inline-block;
+      justify-content: center;
+      width: 40%;
+      margin-left: 80px;
+      background-color: #ffffff;
+      border: $secondaryColor 6px solid;
+      padding: 20px;
+      .tab-button {
+        height: 50px;
+        width: 150px;
+        margin-left: 45px;
+        font-family: "Oregano", cursive;
+        font-size: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: $secondaryColor 3px solid;
+        outline: none;
+      }
+      .tab-button.active {
+        background-color: $secondaryColor;
+        border: #949238 3px solid;
+        color: white;
+      }
+      .what-content {
+        h3 {
+          text-align: center;
+          font-family: "Parisienne", cursive;
+          font-size: 50px;
+          margin-top: 20px;
+          text-decoration: underline 3px $secondaryColor;
+        }
+        p {
+          font-family: "Ibarra Real Nova", serif;
+          margin-top: 18px;
+        }
+        ul {
+          margin-left: 15px;
+          margin-top: 20px;
+          font-family: "Ibarra Real Nova", serif;
+          li {
+            margin-top: 12px;
+          }
+        }
+
+        .content {
+          display: none;
+        }
+        .content.active {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  background-color: #1f1d1d;
+  .footer-house {
+    display: flex;
+    .footer-icon {
+      padding: 40px 200px;
+      img {
+        width: 250px;
+      }
+    }
+    .footer-room {
+      margin-top: 40px;
+      margin-right: 100px;
+      .footer-title {
+        font-family: "Yellowtail", cursive;
+        font-size: 40px;
+        color: $secondaryColor;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .footer-list {
+        font-family: "Libre Caslon Display", serif;
+        color: white;
+        font-size: 20px;
+
+        ul {
+          text-align: center;
+
+          li {
+            list-style: none;
+            padding-bottom: 10px;
+            text-decoration: none;
+
+            a:link,
+            a:visited {
+              text-decoration: none;
+              color: white;
+            }
+            a:hover,
+            a:active {
+              text-decoration: underline solid #ffffff 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
