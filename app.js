@@ -68,3 +68,30 @@ container.addEventListener("click",(e)=>{
     const ele = document.getElementById(id);
     ele.classList.add("active");
 })
+
+
+reviews = document.querySelectorAll(".rev");
+left = document.querySelector(".left-btn");
+right = document.querySelector(".right-btn");
+
+reviews.forEach((review, index)=>{
+    review.style.left = `${index * 100}%`;
+});
+
+let tracker = 0; 
+left.addEventListener("click", ()=>{
+    tracker--;
+    rotation()
+});
+right.addEventListener("click", ()=>{
+    tracker++;
+    rotation()
+});
+
+let rotation()=>{
+
+    reviews.forEach((review)=>{
+        review.style.transform=`translateX(-${100*tracker}%`;
+    }
+    });
+    
