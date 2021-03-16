@@ -221,11 +221,11 @@ header video {
 }
 
 .modal-background .modal-container {
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
   background-color: #ffffff;
   border: #c6ca7c 8px solid;
-  margin: 5% auto;
+  margin: 2% auto;
 }
 
 .modal-background .modal-container .modal-title {
@@ -234,6 +234,29 @@ header video {
   color: #c6ca7c;
   font-family: "Lobster Two", cursive;
   font-size: 40px;
+}
+
+.modal-background .modal-container .shoot-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.modal-background .modal-container .shoot-container .shot {
+  text-align: center;
+}
+
+.modal-background .modal-container .shoot-container .shot img {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .show .modal-background {
