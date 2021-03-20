@@ -191,8 +191,6 @@ header video {
   font-size: 23px;
   font-weight: bold;
   color: #333d0f;
-  -webkit-text-decoration: underline 4px #c6ca7c;
-          text-decoration: underline 4px #c6ca7c;
 }
 
 .modal-background {
@@ -249,6 +247,9 @@ header video {
 
 .modal-background .modal-container .shoot-container .shot {
   text-align: center;
+  color: #c6ca7c;
+  font-family: "Oregano", cursive;
+  font-size: 20px;
 }
 
 .modal-background .modal-container .shoot-container .shot img {
@@ -257,6 +258,162 @@ header video {
   border-radius: 50%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.modal-background .modal-container .dress-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.modal-background .modal-container .dress-container .dress-images {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+}
+
+.modal-background .modal-container .dress-container .dress-images .dressbox-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-background .modal-container .dress-container .dress-images .dressbox-one img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-background .modal-container .dress-container .dress-images .dressbox-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-background .modal-container .dress-container .dress-images .dressbox-two img {
+  width: 50%;
+  height: auto;
+}
+
+.modal-background .modal-container .dress-container .designer-container {
+  height: 100%;
+  width: 30%;
+  display: block;
+  margin: 0 20px;
+}
+
+.modal-background .modal-container .dress-container .designer-container h3 {
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Oregano", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333d0f;
+  font-size: 25px;
+  -webkit-text-decoration: underline 4px #c6ca7c;
+          text-decoration: underline 4px #c6ca7c;
+}
+
+.modal-background .modal-container .dress-container .designer-container ul {
+  margin-top: 20px;
+}
+
+.modal-background .modal-container .dress-container .designer-container ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-background .modal-container .dress-container .designer-container .des-notes {
+  margin-top: 30px;
+}
+
+.modal-background .modal-container .dress-container .designer-container .des-notes ul li {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 100;
+}
+
+.modal-background .modal-container .pgrapher-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.modal-background .modal-container .pgrapher-container .box-one {
+  width: 50%;
+  height: 30%;
+  text-align: center;
+}
+
+.modal-background .modal-container .pgrapher-container .box-one h3 {
+  margin-top: 25px;
+  font-family: "Oregano", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333d0f;
+  font-size: 25px;
+  -webkit-text-decoration: underline 4px #c6ca7c;
+          text-decoration: underline 4px #c6ca7c;
+}
+
+.modal-background .modal-container .pgrapher-container .box-one ul {
+  margin-top: 20px;
+}
+
+.modal-background .modal-container .pgrapher-container .box-one ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-background .modal-container .pgrapher-container .box-two {
+  width: 50%;
+  height: 30%;
+}
+
+.modal-background .modal-container .pgrapher-container .box-two h3 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.modal-background .modal-container .pgrapher-container .box-two ul {
+  margin-top: 20px;
+}
+
+.modal-background .modal-container .pgrapher-container .box-two ul li {
+  margin-top: 5px;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.modal-background .modal-container .pgrapher-container .box-two .booking {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border-color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 20px;
+  background-color: #c6ca7c;
+  outline: none;
+  font-weight: bold;
+  color: #1c3023;
 }
 
 .show .modal-background {
