@@ -344,6 +344,30 @@ header video {
   font-weight: 100;
 }
 
+.modal-background .modal-container .dress-container .designer-container .dress-btncon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.modal-background .modal-container .dress-container .designer-container .dress-btncon .dress-btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border-color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 20px;
+  background-color: #c6ca7c;
+  outline: none;
+  font-weight: bold;
+  color: #1c3023;
+}
+
 .modal-background .modal-container .pgrapher-container {
   width: 100%;
   height: 100%;
@@ -402,6 +426,91 @@ header video {
 }
 
 .modal-background .modal-container .pgrapher-container .box-two .booking {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border-color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 20px;
+  background-color: #c6ca7c;
+  outline: none;
+  font-weight: bold;
+  color: #1c3023;
+}
+
+.modal-background .modal-container .props-container {
+  width: 100%;
+  height: 90%;
+}
+
+.modal-background .modal-container .props-container .propsbox-one {
+  height: 70%;
+}
+
+.modal-background .modal-container .props-container .propsbox-one img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: #df85c1 3px 3px 2px;
+          box-shadow: #df85c1 3px 3px 2px;
+}
+
+.modal-background .modal-container .props-container .propsbox-two {
+  width: 100%;
+  height: 30%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-uno h3 {
+  font-family: "Oregano", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333d0f;
+  font-size: 25px;
+  -webkit-text-decoration: underline 4px #c6ca7c;
+          text-decoration: underline 4px #c6ca7c;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-uno ul {
+  list-style: none;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-uno ul li {
+  margin-top: 5px;
+  font-family: "Libre Caslon Display", serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-dos h4 {
+  text-align: center;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-dos ul li {
+  margin-top: 5px;
+  font-family: "Ibarra Real Nova", serif;
+  list-style: none;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-dos .propsbtn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-background .modal-container .props-container .propsbox-two .props-dos .propsbtn-cont .props-btn {
   margin-top: 20px;
   padding: 10px 30px;
   border-radius: 10px;
