@@ -240,16 +240,21 @@ header {
         .dressbox-one {
           display: flex;
           img {
-            width: 50%;
+            width: 45%;
             height: auto;
-            object-fit: cover;
+            border-radius: 25px;
+            margin: 5px;
+            box-shadow: #1f1d1d 2px 2px 2px;
           }
         }
         .dressbox-two {
           display: flex;
           img {
-            width: 50%;
+            width: 45%;
             height: auto;
+            border-radius: 25px;
+            margin: 5px;
+            box-shadow: #1f1d1d 2px 2px 2px;
           }
         }
       }

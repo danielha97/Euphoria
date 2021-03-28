@@ -286,10 +286,12 @@ header video {
 }
 
 .modal-background .modal-container .dress-container .dress-images .dressbox-one img {
-  width: 50%;
+  width: 45%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  border-radius: 25px;
+  margin: 5px;
+  -webkit-box-shadow: #1f1d1d 2px 2px 2px;
+          box-shadow: #1f1d1d 2px 2px 2px;
 }
 
 .modal-background .modal-container .dress-container .dress-images .dressbox-two {
@@ -299,8 +301,12 @@ header video {
 }
 
 .modal-background .modal-container .dress-container .dress-images .dressbox-two img {
-  width: 50%;
+  width: 45%;
   height: auto;
+  border-radius: 25px;
+  margin: 5px;
+  -webkit-box-shadow: #1f1d1d 2px 2px 2px;
+          box-shadow: #1f1d1d 2px 2px 2px;
 }
 
 .modal-background .modal-container .dress-container .designer-container {
