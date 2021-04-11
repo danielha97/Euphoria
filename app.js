@@ -50,12 +50,13 @@ item.addEventListener("click",(e)=>{
 });
 
 
-const container = document.querySelector(".button-container");
+const container = document.querySelector(".buttons");
 const tabBtn = document.querySelectorAll(".tab-button");
 const content = document.querySelectorAll(".content");
 
 container.addEventListener("click",(e)=>{
    const id = e.target.dataset.link; 
+   console.log(id);
     if(id){
         tabBtn.forEach((butt)=>{
             butt.classList.remove("active");

@@ -212,7 +212,7 @@ header {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 20px;
       .shot {
         text-align: center;
         color: $secondaryColor;
@@ -351,14 +351,14 @@ header {
           margin-top: 25px;
         }
         ul {
-          margin-top: 20px;
+          margin-top: 10px;
           li {
             margin-top: 5px;
             font-family: "Ibarra Real Nova", serif;
           }
         }
         .booking {
-          margin-top: 20px;
+          margin-top: 15px;
           padding: 10px 30px;
           border-radius: 10px;
           border-color: white;
@@ -467,29 +467,32 @@ header {
         width: 100%;
       }
     }
-    .button-container {
-      display: inline-block;
+    .what-container {
       justify-content: center;
       width: 40%;
       margin-left: 80px;
       background-color: #ffffff;
       border: $secondaryColor 6px solid;
       padding: 20px;
-      .tab-button {
-        height: 50px;
-        width: 150px;
-        margin-left: 45px;
-        font-family: "Oregano", cursive;
-        font-size: 30px;
-        border-radius: 10px;
-        cursor: pointer;
-        border: $secondaryColor 3px solid;
-        outline: none;
-      }
-      .tab-button.active {
-        background-color: $secondaryColor;
-        border: #949238 3px solid;
-        color: white;
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        .tab-button {
+          display: inline-block;
+          height: 50px;
+          width: 25%;
+          font-family: "Oregano", cursive;
+          font-size: 30px;
+          border-radius: 10px;
+          cursor: pointer;
+          border: $secondaryColor 3px solid;
+          outline: none;
+        }
+        .tab-button.active {
+          background-color: $secondaryColor;
+          border: #949238 3px solid;
+          color: white;
+        }
       }
       .what-content {
         h3 {
@@ -628,5 +631,304 @@ header {
         }
       }
     }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  header .logo img {
+    margin-left: 35%;
+  }
+  .about-section .about-image Img {
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+  }
+  .photo-section .photo.one h1 {
+    font-size: 40px;
+  }
+  .photo-section button img {
+    width: 50px;
+  }
+  .modal-background .modal-container .shoot-container .shot img {
+    width: 200px;
+    height: 200px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    ul
+    li {
+    font-size: 13px;
+  }
+
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-uno
+    h3 {
+    font-size: 18px;
+  }
+
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-uno
+    ul
+    li {
+    font-size: 15px;
+  }
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-dos
+    .propsbtn-cont
+    .props-btn {
+    margin-top: 0;
+  }
+  .what-background .what-section {
+    display: block;
+  }
+  .what-background .what-section .what-image {
+    width: 100%;
+  }
+  .what-background .what-section .what-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .footer-container .footer-house .footer-icon {
+    padding: 40px 100px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header .logo img {
+    margin-left: 28%;
+    margin-top: 30%;
+  }
+  .about-section .about-image Img {
+    margin-top: 25%;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .about-section .about.two p {
+    padding-top: 150px;
+  }
+  .photo-section {
+    display: none;
+  }
+  .service-section .service-container {
+    display: block;
+  }
+  .service-section .service-container .service-box {
+    margin-left: 30%;
+  }
+  .what-background {
+    margin-top: 150%;
+  }
+
+  .service-section .service-container .service-box .service-title {
+    color: $secondaryColor;
+  }
+  .footer-container .footer-house .footer-icon {
+    display: none;
+  }
+  .footer-container .footer-house .footer-room {
+    margin-right: 50px;
+    margin-left: 10%;
+  }
+  .modal-background .modal-container .shoot-container .shot img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modal-background .modal-container .dress-container {
+    margin-left: 10px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    .dress-btncon {
+    margin-top: 20px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    ul
+    li {
+    font-size: 11px;
+  }
+  .modal-background .cross img {
+    margin-left: 90%;
+    width: 50px;
+  }
+
+  .modal-background .modal-container .props-container {
+    height: 70%;
+  }
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-dos
+    ul
+    li {
+    font-size: 13px;
+  }
+  .props-uno {
+    margin-left: 10px;
+  }
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-dos
+    .propsbtn-cont {
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 480px) {
+  header .logo img {
+    margin-left: 15%;
+  }
+  .about-section .about.one {
+    font-size: 50px;
+  }
+  .about-section .about-image Img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30%;
+  }
+  .service-block {
+    display: none;
+  }
+  .service-section .service-container {
+    margin-top: 10%;
+  }
+  .service-section .service-container .service-box {
+    margin-left: 20%;
+  }
+  .what-background {
+    margin-top: 230%;
+  }
+  .footer-container .footer-house {
+    display: block;
+  }
+  .footer-container .footer-house .footer-room {
+    margin-top: 0px;
+  }
+  .modal-background .modal-container .shoot-container .shot img {
+    width: 70px;
+    height: 70px;
+  }
+  .modal-background .modal-container .pgrapher-container {
+    display: block;
+  }
+  .modal-background .modal-container .pgrapher-container .box-one {
+    height: 20%;
+    margin: auto;
+  }
+  .modal-background .modal-container .pgrapher-container .box-two {
+    margin: auto;
+  }
+  .modal-background .modal-container .pgrapher-container .box-one ul {
+    margin-top: 0;
+  }
+  .modal-background .modal-container .pgrapher-container .box-one ul li {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .modal-background .modal-container .pgrapher-container .box-two h3 {
+    margin-top: 5px;
+  }
+  .modal-background .modal-container .pgrapher-container .box-two ul li {
+    font-size: 10px;
+  }
+  .modal-background .modal-container .pgrapher-container .box-two .booking {
+    margin-top: 5px;
+    font-size: 10px;
+    margin-left: 50px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    .des-notes {
+    margin-top: 5px;
+  }
+  .modal-background .modal-container .dress-container .designer-container ul {
+    margin-top: 5px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    .dress-btncon
+    .dress-btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .dress-images
+    .dressbox-one
+    img {
+    width: 40%;
+    margin: 1px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .dress-images
+    .dressbox-two
+    img {
+    width: 40%;
+    margin: 1px;
+  }
+  .modal-background .modal-container .dress-container .designer-container {
+    margin: 0px;
+    margin-right: 30px;
+    padding-left: 10px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    .dress-btncon {
+    margin-top: 5px;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    ul
+    li {
+    margin-top: 5px;
+  }
+  .modal-background .modal-container .props-container .propsbox-one {
+    height: 50%;
+  }
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-uno
+    h3 {
+    font-size: 15px;
+  }
+  .modal-background
+    .modal-container
+    .props-container
+    .propsbox-two
+    .props-uno
+    ul
+    li {
+    font-size: 13px;
   }
 }
