@@ -633,6 +633,48 @@ header {
     }
   }
 }
+@media all and (max-width: 1340px) {
+  header .logo img {
+    margin-left: 37%;
+  }
+  .photo-section .photo.one h1 {
+    font-size: 40px;
+  }
+  .photo-section .photo-container {
+    width: 55%;
+  }
+  .photo-section .next-btn {
+    margin-left: 90%;
+  }
+  .modal-background .modal-container {
+    width: 90%;
+  }
+  .modal-background .modal-container .shoot-container .shot img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .modal-background .modal-container .dress-container .dress-images {
+    width: 30%;
+  }
+  .modal-background
+    .modal-container
+    .dress-container
+    .designer-container
+    ul
+    li {
+    font-size: 15px;
+  }
+  .modal-background .modal-container .props-container .propsbox-one img {
+    height: 80%;
+  }
+  .modal-background .modal-container .props-container .propsbox-two {
+    margin-top: -5%;
+  }
+  .what-background .what-section .what-image {
+    width: 80%;
+  }
+}
 
 @media all and (max-width: 1200px) {
   header .logo img {
